@@ -20,7 +20,7 @@
         "guzzlehttp/guzzle": "~6.0||^7.0",
         "psr/log": "~1.0",
         "doctrine/cache": "^1.6",
-        "kevinrob/guzzle-cache-middleware": "^1.2 || ^2.0",
+        "kevinrob/guzzle-cache-middleware": "^1.2 || ^2.0 || ^3.0",
         "rtheunissen/guzzle-log-middleware": "^1.0"
     },
     "require-dev": {
