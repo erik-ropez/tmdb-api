@@ -12,17 +12,17 @@
  */
 namespace Tmdb\Event;
 
-use Symfony\Component\EventDispatcher\Event;
+use Symfony\Component\EventDispatcher\GenericEvent;
 use Tmdb\HttpClient\Request;
 use Tmdb\HttpClient\Response;
 use Tmdb\Model\AbstractModel;
 
-class HydrationEvent extends Event
+class HydrationEvent extends GenericEvent
 {
     /**
      * @var AbstractModel
      */
-    private $subject;
+    protected $subject;
 
     /**
      * @var array
@@ -54,7 +54,7 @@ class HydrationEvent extends Event
     /**
      * @return AbstractModel
      */
-    public function getSubject()
+    public function getSubject(): mixed
     {
         return $this->subject;
     }
